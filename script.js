@@ -2,7 +2,6 @@ function validateData() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    // Mock user data
     var dataBase = {
         "users": [
             {
@@ -11,10 +10,6 @@ function validateData() {
             },
             {
                 "email": "user2@example.com",
-                "password": "password"
-            },
-            {
-                "email": "user3@example.com",
                 "password": "password"
             }
         ]
@@ -26,8 +21,9 @@ function validateData() {
     });
 
     if (!userFound) {
-        alert("Invalid Email and password!!!");
+        // alert("Invalid Email and password!!!");
+        alert("INVALID DATA\nCorrect username: user1@gmail.com \nCorrect password: password")
     } else {
-        alert("Valid email and password");
+        window.location = "https://github.com/tommyboiii004";
     }
 }
