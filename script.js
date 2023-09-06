@@ -20,8 +20,8 @@ function validateData() {
         ]
     };
 
-    
-    var userFound = dataBase.users.some(function(user) {
+
+    var userFound = dataBase.users.some(function (user) {
         return user.email === email && user.password === password;
     });
 
